@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/nft-preview-card-challenge-oDNOGcK5nk))
-- [Live Site]([https://your-live-site-url.com](https://devtruce.github.io/nft-preview-card/))
+- Link 1: [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/nft-preview-card-challenge-oDNOGcK5nk))
+- Link 2: [Live Site]([https://your-live-site-url.com](https://devtruce.github.io/nft-preview-card/))
 
 ## My process
 
