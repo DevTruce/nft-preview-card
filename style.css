@@ -172,9 +172,37 @@ body {
   background-repeat: no-repeat;
   max-height: 100%;
   max-width: 100%;
+  /* display: block; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
-.card-img:hover,
+.card-img-hover {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.555);
+  opacity: 0;
+  width: 300px;
+  height: 282px;
+  /* padding: 7rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-img-hover img {
+  height: 50px;
+  width: 50px;
+}
+
+.card-img-hover:hover {
+  opacity: 0.7;
+}
+
+/* .card-img:hover,
 .card-img:focus {
   background-image: url(images/icon-view.svg);
   background-position: center;
@@ -183,7 +211,7 @@ body {
   background-color: hsla(178, 100%, 50%, 0.555);
   opacity: 0.6;
   transition: all 500ms ease-in-out;
-}
+} */
 
 .card-msg,
 .clock,
