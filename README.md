@@ -40,7 +40,7 @@ I had a fun time with this challenge and it was great to help get some real prac
 learning, I enjoyed using flexbox to layout the elements and for the most part I think I did the
 challenge relatively well for where I am at in my learning journey. I am disappointed that I was
 unable to get the hover effect correct on the image but I will come back to that and get it
-working correctly.
+working correctly. (I fixed the hover effect)
 
 ### What I learned
 
