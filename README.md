@@ -8,6 +8,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -40,6 +41,11 @@ learning, I enjoyed using flexbox to layout the elements and for the most part I
 challenge relatively well for where I am at in my learning journey. I am disappointed that I was
 unable to get the hover effect correct on the image but I will come back to that and get it
 working correctly.
+
+### What I learned
+
+I learned how to better use html,css and the main new skill I learned was how to display a altered background/image 
+over an existing one, based on the users actions.
 
 ### Built with
 
