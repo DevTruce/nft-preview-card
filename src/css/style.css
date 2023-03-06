@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+
+/* debug */
+* {
+  border: 2px solid red;
+}
+/* debug */
+
+/* variables  */
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+  font-family: "Outfit";
+  font-weight: 300;
+  color: var(--soft-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 22rem;
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.nft-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nft-image-hover {
+  background-color: #00fff48f;
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.nft-image-hover:hover {
+  opacity: 1;
+}
+
+.nft-header {
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 1.5rem;
+}
+
+.nft-header:hover {
+  color: var(--cyan);
+}
+
+.nft-text {
+  padding: 1rem 0 1rem 0;
+  font-size: 1rem;
+}
+
+.eth-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.author-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.eth {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.clock {
+  font-size: 1rem;
+}
+
+.jules-image {
+  width: 2.7rem;
+  height: 2.7rem;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+}
+
+.jules {
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0.75rem;
+  width: 100%;
+  text-align: center;
+  background-color: var(--card-bg);
+  color: var(--soft-blue);
+  font-size: 0.8rem;
+}
+
+.links {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.links:hover {
+  color: var(--cyan);
+  transition: color 250ms ease-in-out;
+}

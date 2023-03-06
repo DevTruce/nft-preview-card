@@ -1,5 +1,7 @@
 # Frontend Mentor - NFT preview card component solution
 
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -15,8 +17,6 @@
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -38,14 +38,22 @@ Users should be able to:
 
 I had a fun time with this challenge and it was great to help get some real practice while
 learning, I enjoyed using flexbox to layout the elements and for the most part I think I did the
-challenge relatively well for where I am at in my learning journey. I am disappointed that I was
-unable to get the hover effect correct on the image but I will come back to that and get it
-working correctly. (I fixed the hover effect)
+challenge relatively well for where I am at in my learning journey. I revisited and reworked
+this challenge and I think I did better the second time around for sure, elements are responding
+much better and I learned how to correctly get the hover effect!
 
 ### What I learned
 
-I learned how to better use html,css and the main new skill I learned was how to display a altered background/image 
-over an existing one, based on the users actions.
+I learned how to better use html,css & flex box to position elements for a responsive layout, I learned was how to display an altered background/image over an existing one, based on the users actions & I also learned how to correctly use root, html, body & \* selectors. I learned how to
+use css to create a nice image overlay! Lastly I learned how valuable this simple debug tool is!
+it allowed me to get a better understanding of how my elements are behaving to allow me to better
+adjust them.
+
+```css
+* {
+  border: 2px solid red;
+}
+```
 
 ### Built with
 
@@ -54,75 +62,63 @@ over an existing one, based on the users actions.
 - Flexbox
 
 ```html
-<section class="eth-container">
-  <span class="eth">
-    <img src="images/icon-ethereum.svg" alt="ethereum picture" /> 0.041 ETH
-  </span>
-  <span class="clock">
-    <img src="images/icon-clock.svg" alt="clock picture" /> 3 days left
-  </span>
-</section>
+<div class="nft-image">
+  <a
+    href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+    target="_blank"
+    class="nft-image-hover"
+  ></a>
+</div>
 ```
 
 ```css
-.attribution a:hover,
-.attribution a:focus,
-.card-headertxt:hover,
-.card-headertxt:focus,
-.truce-container a:hover,
-.truce-container a:focus {
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-}
-
-.card {
-  background-color: hsl(216, 50%, 16%);
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start;
-  align-items: center; */
-  border-radius: 15px;
-  max-height: 750px;
-  max-width: 300px;
-  padding: 1.25rem;
-  box-shadow: 0px 10px 20px 30px #0c1729;
-}
-
-.card-img {
-  border-radius: 10px;
-  width: 500px;
+.nft-image {
+  width: 100%;
   height: 300px;
-  background: url(images/image-equilibrium.jpg);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 100%;
-  max-width: 100%;
 }
 
-.card-img:hover,
-.card-img:focus {
-  background-image: url(images/icon-view.svg);
-  background-position: center;
-  background-size: cover;
+.nft-image-hover {
+  background-color: #00fff48f;
+  background-image: url(../images/icon-view.svg);
   background-repeat: no-repeat;
-  background-color: hsla(178, 100%, 50%, 0.555);
-  opacity: 0.6;
-  transition: all 500ms ease-in-out;
+  background-position: center;
+  opacity: 0.5;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.nft-image-hover:hover {
+  opacity: 1;
 }
 ```
 
 ### Continued development
 
-I want to focus on semantic html, flexbox and image overlays/transitions as well as the units
-I used when sizing elements.
+I am starting to get better and more confortable with flexbox, units and overall
+layout/positioning but this is still my main focus!
 
 ### Useful resources
 
-- [CSS background-image MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - This helped me get a better understanding for the attribue and helped me
-  get a closer hover effect to the challenge but I still have to figure out how to get the exact
-  hover effect.
+- [CSS Root vs html vs \* vs body](https://blog.timonwa.com/all-vs-root-vs-html-vs-body-selectors) - This helped me better understand how to correctly use root, html, body & \* selectors, this resource also taught me a very simple but helpful trick
+  which is to use a simple debug tool.
+
+```css
+* {
+  border: 2px solid red;
+}
+```
 
 ## Author
 
@@ -130,4 +126,4 @@ I used when sizing elements.
 
 ## Acknowledgments
 
-I need to keep studying xd.
+grace
