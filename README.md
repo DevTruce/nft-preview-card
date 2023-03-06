@@ -126,4 +126,8 @@ layout/positioning but this is still my main focus!
 
 ## Acknowledgments
 
-grace
+[Grace Snow](https://github.com/grace-snow)
+
+Massive thank you to Grace for all of the feedback she has provided! I cannot thank her enough!
+she has been a great help! Her advice is plentiful and I have learned so much from her already
+in the short period of time I have known her.
