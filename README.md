@@ -44,8 +44,15 @@ working correctly. (I fixed the hover effect)
 
 ### What I learned
 
-I learned how to better use html,css and the main new skill I learned was how to display a altered background/image 
-over an existing one, based on the users actions.
+I learned how to better use html,css & flex box to position elements for a responsive layout, I learned was how to display an altered background/image over an existing one, based on the users actions & I also learned how to correctly use root, html, body & \* selectors. Lastly I learned
+how valuable this simple debug tool is! it allowed me to get a better understanding of how my
+elements are behaving to allow me to better adjust them.
+
+```css
+* {
+  border: 2px solid red;
+}
+```
 
 ### Built with
 
@@ -54,63 +61,11 @@ over an existing one, based on the users actions.
 - Flexbox
 
 ```html
-<section class="eth-container">
-  <span class="eth">
-    <img src="images/icon-ethereum.svg" alt="ethereum picture" /> 0.041 ETH
-  </span>
-  <span class="clock">
-    <img src="images/icon-clock.svg" alt="clock picture" /> 3 days left
-  </span>
-</section>
+
 ```
 
 ```css
-.attribution a:hover,
-.attribution a:focus,
-.card-headertxt:hover,
-.card-headertxt:focus,
-.truce-container a:hover,
-.truce-container a:focus {
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-}
 
-.card {
-  background-color: hsl(216, 50%, 16%);
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start;
-  align-items: center; */
-  border-radius: 15px;
-  max-height: 750px;
-  max-width: 300px;
-  padding: 1.25rem;
-  box-shadow: 0px 10px 20px 30px #0c1729;
-}
-
-.card-img {
-  border-radius: 10px;
-  width: 500px;
-  height: 300px;
-  background: url(images/image-equilibrium.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.card-img:hover,
-.card-img:focus {
-  background-image: url(images/icon-view.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: hsla(178, 100%, 50%, 0.555);
-  opacity: 0.6;
-  transition: all 500ms ease-in-out;
-}
 ```
 
 ### Continued development
@@ -120,9 +75,14 @@ I used when sizing elements.
 
 ### Useful resources
 
-- [CSS background-image MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - This helped me get a better understanding for the attribue and helped me
-  get a closer hover effect to the challenge but I still have to figure out how to get the exact
-  hover effect.
+- [CSS Root vs html vs \* vs body](https://blog.timonwa.com/all-vs-root-vs-html-vs-body-selectors) - This helped me better understand how to correctly use root, html, body & \* selectors, this resource also taught me a very simple but helpful trick
+  which is to use a simple debug tool.
+
+```css
+* {
+  border: 2px solid red;
+}
+```
 
 ## Author
 
@@ -130,4 +90,4 @@ I used when sizing elements.
 
 ## Acknowledgments
 
-I need to keep studying xd.
+grace

@@ -5,68 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="src/css/style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FONT -->
   </head>
   <body>
-    <main class="card">
-      <img class="card-img" src="images/image-equilibrium.jpg" alt="" />
+    <main class="container">
+      <img
+        class="nft-image"
+        src="src/images/image-equilibrium.jpg"
+        alt="Equilibrium"
+      />
 
-      <a class="card-img-hover" href="#"
-        ><img src="images/icon-view.svg" alt=""
+      <a class="nft-image-hover" href="#design"
+        ><img src="src/images/icon-view.svg" alt="an eye"
       /></a>
 
-      <h1 class="card-headertxt">Equilibrium #3429</h1>
+      <h1 class="nft-header">Equilibrium #3429</h1>
 
-      <section class="card-msg">
-        <div>Our Equilibrium collection promotes balance and calm.</div>
-      </section>
+      <p class="nft-text">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
 
-      <section class="eth-container">
+      <div class="eth-container">
         <span class="eth">
-          <img src="images/icon-ethereum.svg" alt="ethereum picture" /> 0.041
-          ETH
+          <img src="src/images/icon-ethereum.svg" alt="ethereum" />
+          <span>0.041 ETH</span>
         </span>
+
         <span class="clock">
-          <img src="images/icon-clock.svg" alt="clock picture" /> 3 days left
+          <img src="src/images/icon-clock.svg" alt="clock" />
+          <span>3 days left</span>
         </span>
-      </section>
+      </div>
 
-      <section class="truce-container">
+      <div class="author-container">
         <img
-          class="truce-picture"
-          src="images/pfp2.png"
-          alt="truce picture"
-        /><span class="truce-text"
-          ><span>Coded by </span
-          ><a href="https://github.com/DevTruce" target="_blank"
-            >Truce R.</a
-          ></span
-        >
-      </section>
+          class="jules-image"
+          src="src/images/image-avatar.png"
+          alt="Jules Wyvren"
+        />
 
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >.
-      </footer>
+        <p class="creation-of">
+          Creation of<span class="jules"> Jules Wyvern</span>
+        </p>
+      </div>
     </main>
+
+    <footer class="footer">
+      <p>
+        Challenge by
+        <a
+          class="links"
+          href="https://www.frontendmentor.io/home"
+          target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by
+        <a class="links" href="https://github.com/DevTruce" target="_blank"
+          >Truce R</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
