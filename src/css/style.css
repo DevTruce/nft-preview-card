@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
 
 /* debug */
-/* * {
+* {
   border: 2px solid red;
-} */
+}
 /* debug */
 
 /* variables  */
@@ -43,18 +43,37 @@ body {
   background-color: var(--card-bg);
   border-radius: 0.75rem;
   overflow: hidden;
-  padding: 1.8rem 2rem;
+  padding: 1.5rem;
 }
 
 .nft-image {
+  width: 100%;
+  height: 300px;
   border-radius: 0.75rem;
-}
-
-.nft-image-hover {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nft-image-hover {
+  background-color: #00fff48f;
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.nft-image-hover:hover {
+  opacity: 1;
 }
 
 .nft-header {
