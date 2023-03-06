@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
 
 /* debug */
-/* * {
+* {
   border: 2px solid red;
-} */
+}
 /* debug */
 
 /* variables  */
@@ -44,33 +44,45 @@ body {
   border-radius: 0.75rem;
   overflow: hidden;
   padding: 1.5rem;
+  margin: 1rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0.75rem;
 }
 
 .nft-image {
   width: 100%;
-  height: 300px;
-  border-radius: 0.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/image-equilibrium.jpg);
+  display: block;
+  /* height: 300px; */
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  /* background-image: url(../images/image-equilibrium.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .nft-image-hover {
+  position: absolute;
   background-color: #00fff48f;
   background-image: url(../images/icon-view.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   opacity: 0.5;
   border-radius: 10px;
-  height: 100%;
-  width: 100%;
+  width: 50%;
+  height: 10rem;
   cursor: pointer;
-  opacity: 0;
-  transition: all 250ms ease-in-out;
+  opacity: 1;
+  transition: all 350ms ease-in-out;
 }
 
 .nft-image-hover:hover {
@@ -80,7 +92,7 @@ body {
 .nft-header {
   font-size: 1.5rem;
   color: white;
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
 }
 
 .nft-header:hover {
