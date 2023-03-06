@@ -40,14 +40,19 @@ I had a fun time with this challenge and it was great to help get some real prac
 learning, I enjoyed using flexbox to layout the elements and for the most part I think I did the
 challenge relatively well for where I am at in my learning journey. I revisited and reworked
 this challenge and I think I did better the second time around for sure, elements are responding
-much better and I learned how to correctly get the hover effect!
+much better and I learned how to correctly get the hover effect!. I revisited the challenge again
+to redo the image hover effect with better html, this time around I included an img tag for the
+img in the card. I still will like to revist the challenge again once more in the future and
+complete the hover effect using the ::before & ::after pseudo selectors but for now this is how
+I wanted to go about completing the effect.
 
 ### What I learned
 
 I learned how to better use html,css & flex box to position elements for a responsive layout, I learned was how to display an altered background/image over an existing one, based on the users actions & I also learned how to correctly use root, html, body & \* selectors. I learned how to
 use css to create a nice image overlay! Lastly I learned how valuable this simple debug tool is!
 it allowed me to get a better understanding of how my elements are behaving to allow me to better
-adjust them.
+adjust them. I also learned that I can set the parent position to relative and the child element
+to absolute if I would like to restrict the child size to stay within the parent.
 
 ```css
 * {
@@ -62,44 +67,85 @@ adjust them.
 - Flexbox
 
 ```html
-<div class="nft-image">
+<div class="img-container">
+  <img
+    class="nft-image"
+    src="src/images/image-equilibrium.jpg"
+    alt="equilibrium"
+  />
   <a
-    href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
-    target="_blank"
+    href="https://www.merriam-webster.com/dictionary/equilibrium"
     class="nft-image-hover"
   ></a>
 </div>
 ```
 
 ```css
-.nft-image {
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+  font-family: "Outfit";
+  font-weight: 300;
+  color: var(--soft-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 300px;
+  max-width: 22rem;
+  background-color: var(--card-bg);
   border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/image-equilibrium.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.nft-image {
+  width: 100%;
+  display: block;
 }
 
 .nft-image-hover {
+  position: absolute;
   background-color: #00fff48f;
   background-image: url(../images/icon-view.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 5rem;
   opacity: 0.5;
   border-radius: 10px;
-  height: 100%;
   width: 100%;
+  height: 100%;
   cursor: pointer;
   opacity: 0;
-  transition: all 250ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
-.nft-image-hover:hover {
+.nft-image-hover:hover,
+.nft-image-hover:focus {
   opacity: 1;
 }
 ```
