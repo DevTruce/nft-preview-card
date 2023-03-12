@@ -1,179 +1,218 @@
-# Frontend Mentor - NFT preview card component solution
+<a id="readme-top"></a>
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+<div align="center">
 
-## Table of contents
+[![Contributors][contributors-icon]][contributors-link]
+[![Forks][forks-icon]][forks-link]
+[![Stargazers][stars-icon]][stars-link]
+[![Issues][issues-icon]][issues-link]
+[![MIT License][license-icon]][license-link]
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
-### Screenshot
-
-![](src/images/solution.png)
-
-### Links
-
-- Solution:([Solution](https://www.frontendmentor.io/solutions/nft-preview-card-challenge-oDNOGcK5nk))
-- Live Site:([Live Site](https://devtruce.github.io/nft-preview-card/))
-
-## My process
-
-I had a fun time with this challenge and it was great to help get some real practice while
-learning, I enjoyed using flexbox to layout the elements and for the most part I think I did the
-challenge relatively well for where I am at in my learning journey. I revisited and reworked
-this challenge and I think I did better the second time around for sure, elements are responding
-much better and I learned how to correctly get the hover effect!. I revisited the challenge again
-to redo the image hover effect with better html, this time around I included an img tag for the
-img in the card. I still will like to revist the challenge again once more in the future and
-complete the hover effect using the ::before & ::after pseudo selectors but for now this is how
-I wanted to go about completing the effect.
-
-### What I learned
-
-I learned how to better use html,css & flex box to position elements for a responsive layout, I learned was how to display an altered background/image over an existing one, based on the users actions & I also learned how to correctly use root, html, body & \* selectors. I learned how to
-use css to create a nice image overlay! Lastly I learned how valuable this simple debug tool is!
-it allowed me to get a better understanding of how my elements are behaving to allow me to better
-adjust them. I also learned that I can set the parent position to relative and the child element
-to absolute if I would like to restrict the child size to stay within the parent.
-
-```css
-* {
-  border: 2px solid red;
-}
-```
-
-### Built with
-
-- HTML5
-- CSS3
-- Flexbox
-
-```html
-<div class="img-container">
-  <img
-    class="nft-image"
-    src="src/images/image-equilibrium.jpg"
-    alt="equilibrium"
-  />
-  <a
-    href="https://www.merriam-webster.com/dictionary/equilibrium"
-    class="nft-image-hover"
-  ></a>
 </div>
-```
 
-```css
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/DevTruce/nft-preview-card">
+    <img src="src/images//logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-body {
-  min-height: 100vh;
-  font-size: 1.125rem;
-  font-family: "Outfit";
-  font-weight: 300;
-  color: var(--soft-blue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--main-bg);
-}
+<h3 align="center">NFT Card Challenge</h3>
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 22rem;
-  background-color: var(--card-bg);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  padding: 1.5rem;
-  margin: 1rem;
-}
+  <p align="center">
+    Frontend Mentor - NFT Card Challenge.
+    <br />
+    <a href="https://github.com/DevTruce/nft-preview-card" target="_blank"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://devtruce.github.io/nft-preview-card/" target="_blank">View Demo</a>
+    ·
+    <a href="https://github.com/DevTruce/nft-preview-card/issues" target="_blank">Report Bug</a>
+    ·
+    <a href="https://github.com/DevTruce/nft-preview-card/issues" target="_blank">Request Feature</a>
+  </p>
+</div>
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 0.75rem;
-  position: relative;
-}
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
 
-.nft-image {
-  width: 100%;
-  display: block;
-}
+  </ol>
+</details>
 
-.nft-image-hover {
-  position: absolute;
-  background-color: #00fff48f;
-  background-image: url(../images/icon-view.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 5rem;
-  opacity: 0.5;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  opacity: 0;
-  transition: all 350ms ease-in-out;
-}
+<!-- ABOUT THE PROJECT -->
 
-.nft-image-hover:hover,
-.nft-image-hover:focus {
-  opacity: 1;
-}
-```
+## About The Project
 
-### Continued development
+[![Product Name Screen Shot][product-screenshot]](product-link)
 
-I am starting to get better and more confortable with flexbox, units and overall
-layout/positioning but this is still my main focus!
+This project is a challenge created by frontend mentor and coded by me.
+The goal is to build a responsive webpage based on the images/designs they provide.
+This particular challenge has you building a very nice NFT Card. There is some clean styles and hover effects. Hovering some select elements in the footer and card will give a nice effect you can check them out by visiting the website.
 
-### Useful resources
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [CSS Root vs html vs \* vs body](https://blog.timonwa.com/all-vs-root-vs-html-vs-body-selectors) - This helped me better understand how to correctly use root, html, body & \* selectors, this resource also taught me a very simple but helpful trick
-  which is to use a simple debug tool.
+### Built With
 
-```css
-* {
-  border: 2px solid red;
-}
-```
+- [![HTML5][html5-icon]][html5-link]
+- [![CSS3][css3-icon]][css3-link]
+- [![Flexbox][flexbox-icon]][flexbox-link]
 
-## Author
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Frontend Mentor - [@DevTruce](https://www.frontendmentor.io/profile/DevTruce)
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+[View Demo](https://devtruce.github.io/nft-preview-card/)
+<img src="src/images/step1.png" alt="">
+<img src="src/images/step2.png" alt="">
+<img src="src/images/step3.png" alt="">
+
+### Prerequisites
+
+- Mobile Phone / Desktop / Tablet
+- Internet
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+You can use this project for anything if you would like, It was completed as a code challenge and I might add onto it in the future.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Email: [DevTruce@Gmail-icon]()
+
+Discord: [Xzypher#9999]()
+
+Project Link: [QR Code](https://github.com/DevTruce/nft-preview-card)
+
+[![FEM][fem-icon]][fem-link]<br>
+[![Reddit][reddit-icon]][reddit-link] <br>
+[![Twitter][twitter-icon]][twitter-link]<br>
+[![LinkedIn][linkedin-icon]][linkedin-link]<br>
+[![Stackoverflow][stackoverflow-icon]][stackoverflow-link]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
 
-[Grace Snow](https://github.com/grace-snow)
+- [MDN Documentation](https://developer.mozilla.org/en-US/)
 
-Massive thank you to Grace for all of the feedback she has provided! I cannot thank her enough!
-she has been a great help! Her advice is plentiful and I have learned so much from her already
-in the short period of time I have known her.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- #### MARKDOWN LINKS & IMAGES #### -->
+
+<!-- ## GitHub ##-->
+<!-- links -->
+
+[contributors-link]: https://github.com/DevTruce/nft-preview-card/graphs/contributors
+[forks-link]: https://github.com/DevTruce/nft-preview-card/network/members
+[stars-link]: https://github.com/DevTruce/nft-preview-card/stargazers
+[issues-link]: https://github.com/DevTruce/nft-preview-card/issues
+[license-link]: https://github.com/DevTruce/nft-preview-card/blob/master/LICENSE.txt
+
+<!-- icons -->
+
+[contributors-icon]: https://img.shields.io/github/contributors/DevTruce/nft-preview-card.svg?style=for-the-badge
+[forks-icon]: https://img.shields.io/github/forks/DevTruce/nft-preview-card.svg?style=for-the-badge
+[stars-icon]: https://img.shields.io/github/stars/DevTruce/nft-preview-card.svg?style=for-the-badge
+[issues-icon]: https://img.shields.io/github/issues/DevTruce/nft-preview-card.svg?style=for-the-badge
+[license-icon]: https://img.shields.io/github/license/DevTruce/nft-preview-card.svg?style=for-the-badge
+
+<!-- ## Project ## -->
+
+[product-screenshot]: src/images/screenshot.png
+[product-link]: https://LINK-HERE
+
+<!-- ## Socials ## -->
+<!-- links -->
+
+[fem-link]: https://www.frontendmentor.io/profile/DevTruce
+[stackoverflow-link]: https://stackoverflow-icon/users/16258101/dev-truce
+[twitter-link]: https://twitter-icon/DevTruce
+[reddit-link]: https://www.reddit-icon/user/DevTruce
+[linkedin-link]: https://www.linkedin-icon/in/trucer/
+
+<!-- icons -->
+
+[fem-icon]: https://img.shields.io/badge/fem-20232A?style=for-the-badge&logo=frontendmentor&logoColor=85CDFD
+[stackoverflow-icon]: https://img.shields.io/badge/stackoverflow-20232A?style=for-the-badge&logo=stackoverflow&logoColor=orange
+[twitter-icon]: https://img.shields.io/badge/twitter-20232A?style=for-the-badge&logo=twitter&logoColor=85CDFD
+[reddit-icon]: https://img.shields.io/badge/Reddit-orange?style=for-the-badge&logo=reddit&logoColor=white
+[linkedin-icon]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+<!-- ## Tech & Tools ## -->
+<!-- links -->
+
+[html5-link]: https://html-icon/
+[css3-link]: https://css3-icon/
+[flexbox-link]: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+[grid-link]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+[bootstrap-link]: https://getbootstrap-icon
+[javascript-link]: https://www.javascript-icon/
+[reactjs-link]: https://reactjs.org/
+[nextjs-link]: https://nextjs.org/
+[expressjs-link]: https://expressjs-icon/
+
+<!-- icons -->
+
+[html5-icon]: https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white
+[css3-icon]: https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=CSS3&logoColor=white
+[flexbox-icon]: https://img.shields.io/badge/flexbox-blue?style=for-the-badge&logo=CSS3&logoColor=white
+[grid-icon]: https://img.shields.io/badge/Grid-blue?style=for-the-badge&logo=CSS3&logoColor=white
+[bootstrap-icon]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[javascript-icon]: https://img.shields.io/badge/Javascript-FCE22A?style=for-the-badge&logo=javascript&logoColor=black
+[reactjs-icon]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[nextjs-icon]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[expressjs-icon]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
