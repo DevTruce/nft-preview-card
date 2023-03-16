@@ -173,7 +173,7 @@ Project Link: [QR Code](https://github.com/DevTruce/nft-preview-card)
 <!-- ## Project ## -->
 
 [product-screenshot]: src/images/screenshot.png
-[product-link]: https://LINK-HERE
+[product-link]: https://devtruce.github.io/repo_name/
 
 <!-- ## Socials ## -->
 <!-- links -->
