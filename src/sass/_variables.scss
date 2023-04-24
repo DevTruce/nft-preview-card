@@ -24,18 +24,4 @@ $font-large: 2.2rem;
       @content;
     }
   }
-
-  @if $breakpoint == tablet {
-    @media only screen and (min-width: 48em) and (max-width: 63.9375em) {
-      // 767px - 1023px
-      @content;
-    }
-  }
-
-  @if $breakpoint == desktop {
-    @media only screen and (min-width: 64em) {
-      // 1024px and above
-      @content;
-    }
-  }
 }
