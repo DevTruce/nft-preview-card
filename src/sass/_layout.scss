@@ -1,0 +1,122 @@
+//////////////////////////////////////////////////
+// CARD
+
+.card {
+  width: 30rem;
+  border-radius: 1rem;
+  background-color: $color-blue--3;
+
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__image {
+    display: block;
+    width: 30.2rem;
+    height: 30.2rem;
+    border-radius: inherit;
+
+    background-image: url(../imgs/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-cyan, 0.5);
+      border-radius: inherit;
+      opacity: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 5rem;
+      width: 5rem;
+      background-image: url(../imgs/icon-view.svg);
+      opacity: 0;
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    color: $color-white;
+    font-size: $font-large;
+    margin: 2rem 0;
+    align-self: flex-start;
+  }
+
+  &__text {
+    opacity: 0.8;
+    line-height: 1.5;
+  }
+
+  &__information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 2px solid rgba($color-white, 0.1);
+    font-size: $font-small;
+
+    &--eth {
+      display: flex;
+      color: $color-cyan;
+      font-weight: 600;
+    }
+
+    &--icon {
+      margin-right: 1rem;
+    }
+
+    &--text {
+    }
+
+    &--time {
+      display: flex;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 100%;
+
+    font-size: $font-small;
+
+    &--image {
+      height: 3.3rem;
+      width: 3.3rem;
+      border-radius: 50%;
+      outline: 1px solid$color-white;
+      margin-right: 2rem;
+    }
+
+    &--text {
+    }
+
+    span {
+      color: $color-white;
+    }
+  }
+}
