@@ -18,7 +18,7 @@
 <h3 align="center">NFT Preview Card</h3>
 
   <p align="center">
-    A sleek and interactive NFT card component. 
+    sleek and interactive NFT card component. 
     <br />
     <br />
     <a href="https://devtruce.github.io/nft-preview-card/" target="_blank">View Demo</a>
